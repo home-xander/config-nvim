@@ -127,94 +127,12 @@ Plug 'neoclide/coc-emmet', aci
 Plug 'neoclide/coc-pairs', aci 
 Plug 'neoclide/coc-json', aci
 Plug 'neoclide/coc-rls', aci
-
-" Comments: Toggles!
-"   <gcc>                       Comment out a line 
-"   <gcc#>                      Comment out the next # lines 
-"   <gc>                        Comment out the target of a motion:
-"       <gcap>                      For a paragraph
-"   <gc>                        [visual] comment out selection
-"   <gc>                        [operator] target a comment 
-"
-"   Commands:
-"       Range:                  :#,#Commentary (i.e. :7,17Commentary)
-"       Global:                 :g/EXAMPLE/Commentary  
 Plug 'tpope/vim-commentary'
-
-" Git: Fugitive
-"   Commands:
-"       :Git                    Opens a summary window with dirty files and unpushed and
-"                               unpublished commits. Press g? to bring up a list of maps
-"                               for numerous operations including diffing, staging, 
-"                               committing, rebasing and stashing
-"       :Git \
-"           commit              Open an editor to commit the current changes
-"           rebase -i           Open an editor to rebase 
-"           blame               Use a temporary buffer for triage. Press enter on a 
-"                               line to view the commit where the line changed, or g? 
-"                               to see other available maps. Omit the filename 
-"                               argument and the currently edited file will be blamed 
-"                               in a virtual scroll-bound split
-"           {merge,diff}tool    Load changesets into a quickfix list 
-"
-"       :Gedit HEAD~3:%         Loads the current file as it exists 3 commits 
-"                               ago
-"
-"       :Gdiffsplit             Brings the staged version of the file 
-"                               side-by-side
-"
 "   TODO: vim-airline 
 Plug 'tpope/vim-fugitive'
-
-
-" EasyAlign: https://github.com/junegunn/vim-easy-align
-"  ga                           Start interactive EasyAlign
-"
-"  vipga#                       [visual] Align text around #character
-"
-"                               - [v]isual select [i]nner [p]aragraph
-"                               - Start EasyAlign command [ga]
-"                               - Align around [#character]
-"
-"  gaip#                        [interactive] Align text around #character 
-"
-"                               - Start EasyAlign [ga]
-"                               - Select [i]nner [p]aragraph
-"                               - Align around [#character]
-"
-"
-" 
-"
 Plug 'junegunn/vim-easy-align'
-
-" Easymotion: 
-" p == <Leader><Leader>
-"
-"   <p>w                        Triggers forward word motion
-"   <p>f#                       Forward highlight all occurances of #char
-"   s##                         Highlight all words starting with ##char
-"   t##                         Highlight all words ending with ##char 
-"   /#                          Search for #text and move with:
-"       <tab>                   Forward & wraps
-"       <S-tab>                 Backwards
-"   l                           Inline: moves forward
-"   h                           Inline: moves backwards 
-"   j                           Moves forwards to a line (keeps cursor position)
-"   k                           Moves backwards to a line (keeps cursor position)
-"
-" https://github.com/easymotion/vim-easymotion/blob/master/doc/easymotion.txt#L86
 Plug 'easymotion/vim-easymotion'
-
-" NERDTree:
-"
-"   <F10>                       Toggle NERDTree 
-
-Plug 'scrooloose/nerdtree'
-
-" nerd tree
 " ctrlP
-" easy motion
-" status bar
 call plug#end()
 
 "* Sensible defaults.
